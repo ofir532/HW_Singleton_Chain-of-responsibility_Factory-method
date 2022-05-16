@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace HW_Singleton_Chain_of_responsibility_Factory_method.Chain
 {
-    internal class GeneralCheckStation : Garage;
+    internal class GeneralCheckStation : Garage
     {
-        protected GeneralCheckStation nextCheck;
-        public bool isFixed;
-        public void NextCheck(GeneralCheckStation next)
-        {
-            nextCheck = next;
-        }
+
         public override void HandleCar(Car car)
         {
             Random random = new Random();
             int test = random.Next(1, 11);
             if (test >= 6)
             {
-                Console.WriteLine($"{car.Brand} Test pass. Next test is in Mechanic Station");
+                Console.WriteLine($"The test end for {car.Brand} without finding the problem. Next test is in the mechanic Station");
                 if (nextCheck != null)
                     nextCheck.HandleCar(car);
                 else

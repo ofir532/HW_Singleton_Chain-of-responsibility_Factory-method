@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW_Singleton_Chain_of_responsibility_Factory_method.Chain
 {
-    internal class DiagnosticCheckStation : Garage
+    internal class DiagnosticCheckStation : GarageTest
     {
         public override void HandleCar(Car car)
         {

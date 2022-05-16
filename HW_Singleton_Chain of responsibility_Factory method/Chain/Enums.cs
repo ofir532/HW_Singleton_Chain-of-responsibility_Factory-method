@@ -8,7 +8,7 @@ namespace HW_Singleton_Chain_of_responsibility_Factory_method.Chain
 {
     public enum CarBrand
     {
-        Mazda,
+        Toyota,
         Mercedes,
         Skoda,
         Renault

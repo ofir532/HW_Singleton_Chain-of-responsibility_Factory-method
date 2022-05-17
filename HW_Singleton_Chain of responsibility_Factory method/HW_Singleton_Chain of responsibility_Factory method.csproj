@@ -6,4 +6,8 @@
     <RootNamespace>HW_Singleton_Chain_of_responsibility_Factory_method</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
 </Project>

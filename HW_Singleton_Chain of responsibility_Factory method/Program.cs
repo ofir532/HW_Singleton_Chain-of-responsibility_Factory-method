@@ -1,5 +1,7 @@
 ﻿using System;
 using HW_Singleton_Chain_of_responsibility_Factory_method.Chain;
+using HW_Singleton_Chain_of_responsibility_Factory_method.Factory;
+
 
 namespace HW_Singleton_Chain_of_responsibility_Factory_method
 {
@@ -15,6 +17,7 @@ namespace HW_Singleton_Chain_of_responsibility_Factory_method
             Console.WriteLine(clock);
             Console.WriteLine(clock1);
             #endregion
+
             #region Chain
             Car c1 = new Car(CarBrand.Toyota, true);
             Car c2 = new Car(CarBrand.Mercedes, true);
@@ -36,6 +39,11 @@ namespace HW_Singleton_Chain_of_responsibility_Factory_method
 
 
             #endregion
+            #region Factory
+            Customer car1 = new Customer(41565, "Ofir Dahan", 29, 80, 183);
+            Console.WriteLine(car1);
+            #endregion
+
         }
     }
 }

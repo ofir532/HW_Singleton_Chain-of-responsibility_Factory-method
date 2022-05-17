@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace HW_Singleton_Chain_of_responsibility_Factory_method.Factory
 {
-    internal class DietBase
+    internal abstract class DietBase
     {
+
     }
 }
